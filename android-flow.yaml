@@ -1,0 +1,22 @@
+appId: com.saucelabs.mydemoapp.android
+---
+- launchApp:
+    appId: "com.saucelabs.mydemoapp.android"
+    clearState: true
+- tapOn: "View menu"
+- tapOn: "Log In"
+- assertVisible:
+    id: "com.saucelabs.mydemoapp.android:id/nameET"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/nameET"
+# - inputText: "bod@example.com"
+- inputRandomEmail
+- assertVisible:
+    id: "com.saucelabs.mydemoapp.android:id/passwordET"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/passwordET"
+- inputText: "10203040"
+- tapOn:
+    text: "Login"
+    index: 1
+- assertVisible: "App logo and name"
