@@ -8,15 +8,25 @@ Repository for Mobile application automation on sauce demo app with the open sou
 
 [x] https://maestro.mobile.dev/
 
+# Step to run locally
+
+[x] maestro test -c flows/android
+
+# Step to run in maestro cloud
+
+[x] maestro cloud {app.apk} flows/android
+
+# Report
+
+[x] maestro test --format junit flows/android
+
 # Sample demo run
 
 ![maestro](https://user-images.githubusercontent.com/85440725/209516398-305ff024-226c-45bb-b4e5-44cb48751390.gif)
 
-
 # TBC
 
 [x] iOS simulator run<br>
-[x] Maestro cloud run<br>
-[x] Integration
+[x] Integration with Github Actions
 
 ------ This is in progress ------

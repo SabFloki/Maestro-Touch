@@ -1,14 +1,26 @@
 appId: com.saucelabs.mydemoapp.android
 ---
+- runFlow:
+      file: login.yaml
+      env:
+          USERNAME: user@example.com
+          PASSWORD: 123
 - assertVisible: "Products"
 - assertVisible:
-    text: "Sauce Lab Back Packs"
-    index: 0
+      text: "Sauce Lab Back Packs"
+      index: 0
 - tapOn:
-    text: "Sauce Lab Back Packs"
-    index: 0
+      text: "Sauce Lab Back Packs"
+      index: 0
 - assertVisible: "Displays selected product"
 - assertVisible: "$ 29.99"
 - scroll
 - takeScreenshot: screenshots/CartScreen # will be stored as a CartScreen.png
+- copyTextFrom:
+      id: "com.saucelabs.mydemoapp.android:id/noTV"
+- runScript: myScript.js
+- evalScript: ${output.result = maestro.copiedText}
 - tapOn: "Increase item quantity"
+- copyTextFrom:
+      id: "com.saucelabs.mydemoapp.android:id/noTV"
+- assertTrue: ${output.updated = maestro.copiedText}
