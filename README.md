@@ -16,6 +16,12 @@ Repository for Mobile application automation on sauce demo app with the open sou
 
 [x] maestro cloud {app.apk} flows/android
 
+
+
+
+https://user-images.githubusercontent.com/85440725/209554963-4b8e80cc-76fe-45e6-b4f1-609a7c5d681e.mov
+
+
 # Report
 
 [x] maestro test --format junit flows/android
