@@ -20,3 +20,9 @@ appId: com.saucelabs.mydemoapp.android
     text: "Login"
     index: 1
 - assertVisible: "App logo and name"
+- runFlow:
+    when:
+      visible:
+        text: "Sauce Lab Bolt T-Shirt"
+        index: 0
+    file: addtocart.yaml

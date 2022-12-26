@@ -1,0 +1,14 @@
+appId: com.saucelabs.mydemoapp.android
+---
+- assertVisible: "Products"
+- assertVisible:
+    text: "Sauce Lab Back Packs"
+    index: 0
+- tapOn:
+    text: "Sauce Lab Back Packs"
+    index: 0
+- assertVisible: "Displays selected product"
+- assertVisible: "$ 29.99"
+- scroll
+- takeScreenshot: screenshots/CartScreen # will be stored as a CartScreen.png
+- tapOn: "Increase item quantity"
