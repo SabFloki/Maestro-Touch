@@ -10,10 +10,13 @@ Repository for Mobile application automation on sauce demo app with the open sou
 
 # Sample demo run
 
+![maestro](https://user-images.githubusercontent.com/85440725/209516398-305ff024-226c-45bb-b4e5-44cb48751390.gif)
+
+
 # TBC
 
-[x] iOS simulator run
-[x] Maestro cloud run
+[x] iOS simulator run<br>
+[x] Maestro cloud run<br>
 [x] Integration
 
 ------ This is in progress ------
