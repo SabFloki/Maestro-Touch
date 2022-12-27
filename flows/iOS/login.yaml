@@ -1,0 +1,12 @@
+appId: com.saucelabs.SwagLabsMobileApp
+env:
+  USERNAME: standard_user
+  PASSWORD: secret_sauce
+---
+- launchApp
+- assertVisible: "Username"
+- tapOn: "Username"
+- inputText: ${USERNAME}
+- tapOn: "Password"
+- inputText: ${PASSWORD}
+- tapOn: "LOGIN"

@@ -1,0 +1,19 @@
+appId: com.saucelabs.SwagLabsMobileApp
+---
+- runFlow:
+    file: login.yaml
+    env:
+      USERNAME: standard_user
+      PASSWORD: secret_sauce
+- assertVisible: "PRODUCTS"
+- scroll
+- assertVisible: "Sauce Labs Onesie"
+- tapOn: "Sauce Labs Onesie"
+- assertVisible: "Sauce Labs Onesie"
+- assertVisible: "$7.99"
+- scroll
+- tapOn: "ADD TO CART"
+- assertVisible: "BACK TO PRODUCTS"
+- tapOn: "BACK TO PRODUCTS"
+- assertVisible:
+    id: "test-REMOVE"
